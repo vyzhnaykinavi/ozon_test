@@ -27,9 +27,7 @@ public class SearchPage extends BasePage {
             for (int i = 0; i <= 50; i++) {
                 WebElement footerElement = driver.findElement(By.className("eFooter_Table"));
                 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", footerElement);
-
                 waitForJqueryComplete();
-
                 //WebElement loadingIndicator = driver.findElement(By.className("mLoading"));
             }
         } catch (NoSuchElementException e) {
@@ -46,9 +44,6 @@ public class SearchPage extends BasePage {
                     ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", item);
                     item.click();
                     basketCount++;
-                    if (basketCount==10){
-                        break;
-                    }
                 }
             }
         }
