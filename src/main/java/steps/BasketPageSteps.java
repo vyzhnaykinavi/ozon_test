@@ -4,7 +4,8 @@ import pages.BasketPage;
 import pages.SearchPage;
 import ru.yandex.qatools.allure.annotations.Step;
 
-import static org.testng.AssertJUnit.assertEquals;
+
+import static junit.framework.TestCase.assertEquals;
 import static steps.BaseSteps.getDriver;
 
 public class BasketPageSteps {

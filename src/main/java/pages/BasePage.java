@@ -2,7 +2,8 @@ package pages;
 
 import org.openqa.selenium.*;
 
-import static org.testng.AssertJUnit.assertEquals;
+import static junit.framework.TestCase.assertEquals;
+
 
 public class BasePage {
     WebDriver driver;

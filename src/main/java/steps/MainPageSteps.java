@@ -8,7 +8,8 @@ import ru.yandex.qatools.allure.annotations.Step;
 
 import java.util.HashMap;
 
-import static org.testng.AssertJUnit.assertTrue;
+
+import static junit.framework.TestCase.assertTrue;
 import static steps.BaseSteps.getDriver;
 
 public class MainPageSteps {
